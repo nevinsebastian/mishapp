@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException, status, Request
 from . import schemas
 from fastapi.responses import JSONResponse
-from pydantic import BaseModel
+from dataclasses import dataclass
 import logging
 import json
 import os
@@ -12,19 +12,11 @@ app = FastAPI(title="Contact Form API", version="1.0.0")
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-class ContactFormRequest(BaseModel):
+@dataclass
+class ContactFormRequest:
     name: str
     email: str
     message: str
-    
-    class Config:
-        schema_extra = {
-            "example": {
-                "name": "John Doe",
-                "email": "john@example.com",
-                "message": "Hello, this is a test message!"
-            }
-        }
 
 CONTACTS_FILE = "contact_forms.json"
 
