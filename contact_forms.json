@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "email": "john@example.com",
+    "message": "Hello, this is a test message!",
+    "created_at": "2025-09-22T17:57:02.753496"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "email": "jane@example.com",
+    "message": "This is a test message from the updated API!",
+    "created_at": "2025-09-22T18:15:05.646094"
+  },
+  {
+    "id": 3,
+    "name": "nevin",
+    "email": "nevin@test.com",
+    "message": "hi am nevin",
+    "created_at": "2025-09-22T18:15:10.351839"
+  },
+  {
+    "id": 4,
+    "name": "Test User",
+    "email": "test@example.com",
+    "message": "This is a test message from the Python script!",
+    "created_at": "2025-09-22T18:15:31.656616"
+  }
+]
